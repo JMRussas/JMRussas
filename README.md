@@ -18,6 +18,7 @@ I build AI-augmented engineering workflows. The open source projects here are pa
 |---------|-------------|
 | [**mcp-rag**](https://github.com/JMRussas/mcp-rag) | Config-driven RAG pipeline + MCP server. Chunks code, embeds locally via Ollama, serves hybrid search. |
 | [**dungeon-gen**](https://github.com/JMRussas/dungeon-gen) | Interactive browser-based dungeon generator — Kruskal's algorithm, Union-Find, BFS room assignment. [Live demo.](https://jmrussas.github.io/dungeon-gen/) |
+| [**ai-video-composite**](https://github.com/JMRussas/ai-video-composite) | Green-screen removal and compositing toolkit for AI-generated video. Three-stage cleanup pipeline (rembg + alpha cleanup + green defringing). |
 | [**ollama-mcp**](https://github.com/JMRussas/ollama-mcp) | MCP server exposing local Ollama instances as tools for AI coding assistants. |
 
 ## Career Highlights
