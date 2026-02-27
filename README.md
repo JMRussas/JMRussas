@@ -31,7 +31,7 @@ The standalone tools below were extracted from the orchestration engine's tool e
 - **Dell EMC** (8 years) — Built a three-tier test orchestration platform managing 90% of automated testing for Midrange Storage. ML-optimized scheduling. Scaled VxRail engineering from 30 to 200+ people; product grew from $30M to $2B+.
 - **Full Spectrum Software** (9 years) — Production software and technical lead across regulated medical device products: infusion pumps, ultrasound imaging, EEG monitoring, and radiation dosimetry systems. IEC 62304, ISO 13485.
 - **Full Spectrum Software** (2 years, return engagement) — Technical project management with hands-on development. Regulated IoT on Linux, intelligent catheter systems. FDA regulatory frameworks, IEC 62304.
-- **PurpleZerker LLC** (current) — Independent engineering: Unity multiplayer at Pocket Worlds, medical device software consulting, game and AI platform development.
+- **Haemonetics** (current) — R&D Program Manager across multiple medical device software products: TEG, NexLynk, and BloodTrack.
 
 ## Tech
 
