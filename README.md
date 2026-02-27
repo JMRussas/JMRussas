@@ -2,30 +2,36 @@
 
 Software engineer with 25 years building production systems — test orchestration platforms, game engines, AI content pipelines, medical device software, and developer tooling.
 
-I build AI-augmented engineering workflows. The open source projects here are part of a local AI infrastructure I designed and run: RAG pipelines, MCP tool servers, multi-GPU inference routing, and code-aware search — all feeding into a daily development workflow where AI tooling is a force multiplier, not a novelty. I architect the systems, make the technical decisions, and use AI the way I'd use any tool in my stack.
+I build AI-augmented engineering workflows. The open source projects here are part of a local AI infrastructure I designed and run: task orchestration with multi-model routing, RAG pipelines, MCP tool servers, multi-GPU inference, and code-aware search — all feeding into a daily development workflow where AI tooling is a force multiplier, not a novelty. I architect the systems, make the technical decisions, and use AI the way I'd use any tool in my stack.
 
 ## What I'm Building
 
-**TikTok Live Game Platform** — Real-time interactive game on a custom C# engine with AI-driven procedural content generation (ComfyUI, MuseTalk, LLMs), TikTok Live integration, and a React + FastAPI content dashboard. Dual-GPU inference across RTX 4090 + 3090.
+**Orchestration Engine** — AI-powered task orchestration platform. Decomposes requirements into a dependency-aware DAG, routes each task to the cheapest capable model (local Ollama → Haiku → Sonnet), and executes in parallel with TOCTOU-safe budget reservation, tool use, and real-time SSE progress streaming. FastAPI + React, 390+ tests at 85% coverage. This is the system that ties everything below together.
 
-**RAG Developer Tools** — MCP servers that index codebases into searchable knowledge bases with hybrid semantic + keyword search. Custom language-aware chunkers for C# and Verse. Powers AI-assisted development with accurate, project-specific context.
+**TraceabilityMedCode** (private — commercial product in development) — Code-native traceability framework for IEC 62304 / ISO 13485 / FDA 21 CFR 820 compliance. Embeds structured annotations directly in source code comments, then validates the full chain from requirements → code → tests → reviews. Risk-class-aware validation (A/B/C), SHA-256 tamper detection, CI pipeline gating, and a VS Code extension with real-time diagnostics. Designed from patterns I've seen repeatedly across 11 years of regulated medical device development. TypeScript monorepo, 218 tests.
+
+**TikTok Live Game Platform** — Real-time interactive game on a custom C# engine with AI-driven procedural content generation (ComfyUI, MuseTalk, LLMs), TikTok Live integration, and a React + FastAPI content dashboard. Dual-GPU inference across RTX 4090 + 3090.
 
 **UEFN Dungeon Crawler** — Procedurally generated dungeon crawler in Verse with 11 game systems, Kruskal's maze generation across 3 vertical levels, and data-driven item/ability progression.
 
 ## Open Source
 
+The standalone tools below were extracted from the orchestration engine's tool ecosystem and published as independent, reusable components.
+
 | Project | Description |
 |---------|-------------|
-| [**mcp-rag**](https://github.com/JMRussas/mcp-rag) | Config-driven RAG pipeline + MCP server. Chunks code, embeds locally via Ollama, serves hybrid search. |
+| [**orchestration-engine**](https://github.com/JMRussas/orchestration-engine) | Multi-model task orchestration: dependency DAG, budget-aware model routing, parallel execution, real-time SSE. 390+ tests. |
+| [**mcp-rag**](https://github.com/JMRussas/mcp-rag) | Config-driven RAG pipeline + MCP server. Chunks code with language-aware parsers, embeds locally via Ollama, serves hybrid semantic/keyword search. |
 | [**dungeon-gen**](https://github.com/JMRussas/dungeon-gen) | Interactive browser-based dungeon generator — Kruskal's algorithm, Union-Find, BFS room assignment. [Live demo.](https://jmrussas.github.io/dungeon-gen/) |
 | [**ai-video-composite**](https://github.com/JMRussas/ai-video-composite) | Green-screen removal and compositing toolkit for AI-generated video. Three-stage cleanup pipeline (rembg + alpha cleanup + green defringing). |
-| [**ollama-mcp**](https://github.com/JMRussas/ollama-mcp) | MCP server exposing local Ollama instances as tools for AI coding assistants. |
+| [**ollama-mcp**](https://github.com/JMRussas/ollama-mcp) | MCP server exposing local Ollama instances as tools for AI coding assistants. Multi-host routing, generate/chat/embed/list endpoints. |
 
 ## Career Highlights
 
 - **Dell EMC** (8 years) — Built a three-tier test orchestration platform managing 90% of automated testing for Midrange Storage. ML-optimized scheduling. Scaled VxRail engineering from 30 to 200+ people; product grew from $30M to $2B+.
-- **PurpleZerker LLC** (current) — Independent engineering: Unity multiplayer at Pocket Worlds, medical device software under FDA/ISO at Full Spectrum Software, game and AI platform development.
-- **Full Spectrum Software** (9 years) — Production software and technical lead across medical device products under FDA regulatory frameworks.
+- **Full Spectrum Software** (9 years) — Production software and technical lead across regulated medical device products: infusion pumps, ultrasound imaging, EEG monitoring, and radiation dosimetry systems. IEC 62304, ISO 13485.
+- **Full Spectrum Software** (2 years, return engagement) — Technical project management with hands-on development. Regulated IoT on Linux, intelligent catheter systems. FDA regulatory frameworks, IEC 62304.
+- **PurpleZerker LLC** (current) — Independent engineering: Unity multiplayer at Pocket Worlds, medical device software consulting, game and AI platform development.
 
 ## Tech
 
