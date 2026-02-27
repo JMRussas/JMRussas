@@ -18,8 +18,6 @@ I build AI-augmented engineering workflows. The open source projects here are pa
 
 ## Open Source
 
-The standalone tools below were extracted from the orchestration engine's tool ecosystem and published as independent, reusable components.
-
 | Project | Description |
 |---------|-------------|
 | [**cozy-creatures**](https://github.com/JMRussas/cozy-creatures) | Multiplayer 3D social hangout: React Three Fiber, Socket.io, LiveKit voice, collectible skin system. 382 tests. |
