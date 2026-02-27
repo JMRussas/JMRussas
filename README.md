@@ -12,6 +12,8 @@ I build AI-augmented engineering workflows. The open source projects here are pa
 
 **TikTok Live Game Platform** — Real-time interactive game on a custom C# engine with AI-driven procedural content generation (ComfyUI, MuseTalk, LLMs), TikTok Live integration, and a React + FastAPI content dashboard. Dual-GPU inference across RTX 4090 + 3090.
 
+**Cozy Creatures** — Multiplayer social hangout where players are cute low-poly creature avatars in themed 3D rooms. React Three Fiber, Socket.io real-time sync, LiveKit spatial voice chat, 30-skin collectible cosmetics system with HSL shaders and GPU particles. 10k+ lines of TypeScript across client, server, and shared packages. 382 tests.
+
 **UEFN Dungeon Crawler** — Procedurally generated dungeon crawler in Verse with 11 game systems, Kruskal's maze generation across 3 vertical levels, and data-driven item/ability progression.
 
 ## Open Source
@@ -20,6 +22,7 @@ The standalone tools below were extracted from the orchestration engine's tool e
 
 | Project | Description |
 |---------|-------------|
+| [**cozy-creatures**](https://github.com/JMRussas/cozy-creatures) | Multiplayer 3D social hangout: React Three Fiber, Socket.io, LiveKit voice, collectible skin system. 382 tests. |
 | [**orchestration-engine**](https://github.com/JMRussas/orchestration-engine) | Multi-model task orchestration: dependency DAG, budget-aware model routing, parallel execution, real-time SSE. 390+ tests. |
 | [**mcp-rag**](https://github.com/JMRussas/mcp-rag) | Config-driven RAG pipeline + MCP server. Chunks code with language-aware parsers, embeds locally via Ollama, serves hybrid semantic/keyword search. |
 | [**dungeon-gen**](https://github.com/JMRussas/dungeon-gen) | Interactive browser-based dungeon generator — Kruskal's algorithm, Union-Find, BFS room assignment. [Live demo.](https://jmrussas.github.io/dungeon-gen/) |
@@ -35,4 +38,4 @@ The standalone tools below were extracted from the orchestration engine's tool e
 
 ## Tech
 
-`C#` `.NET` `Python` `TypeScript` `React` `FastAPI` `Unity` `UEFN/Verse` `Docker` `Ollama` `SQLite` `MCP` `RAG`
+`C#` `.NET` `Python` `TypeScript` `React` `React Three Fiber` `FastAPI` `Unity` `UEFN/Verse` `Docker` `Ollama` `SQLite` `Socket.io` `LiveKit` `MCP` `RAG`
