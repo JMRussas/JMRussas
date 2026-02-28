@@ -20,12 +20,13 @@ I build AI-augmented engineering workflows. The open source projects here are pa
 
 | Project | Description |
 |---------|-------------|
-| [**cozy-creatures**](https://github.com/JMRussas/cozy-creatures) | Multiplayer 3D social hangout: React Three Fiber, Socket.io, LiveKit voice, collectible skin system. 382 tests. |
 | [**orchestration-engine**](https://github.com/JMRussas/orchestration-engine) | Multi-model task orchestration: dependency DAG, budget-aware model routing, parallel execution, real-time SSE. 390+ tests. |
+| [**ai-engineering-conventions**](https://github.com/JMRussas/ai-engineering-conventions) | 14 process conventions for AI-augmented development — planning rigor, guardrail hooks, checkpoint commits, context budgeting, and more. Extracted from daily practice. |
 | [**mcp-rag**](https://github.com/JMRussas/mcp-rag) | Config-driven RAG pipeline + MCP server. Chunks code with language-aware parsers, embeds locally via Ollama, serves hybrid semantic/keyword search. |
+| [**cozy-creatures**](https://github.com/JMRussas/cozy-creatures) | Multiplayer 3D social hangout: React Three Fiber, Socket.io, LiveKit voice, collectible skin system. 382 tests. |
 | [**dungeon-gen**](https://github.com/JMRussas/dungeon-gen) | Interactive browser-based dungeon generator — Kruskal's algorithm, Union-Find, BFS room assignment. [Live demo.](https://jmrussas.github.io/dungeon-gen/) |
-| [**ai-video-composite**](https://github.com/JMRussas/ai-video-composite) | Green-screen removal and compositing toolkit for AI-generated video. Three-stage cleanup pipeline (rembg + alpha cleanup + green defringing). |
 | [**ollama-mcp**](https://github.com/JMRussas/ollama-mcp) | MCP server exposing local Ollama instances as tools for AI coding assistants. Multi-host routing, generate/chat/embed/list endpoints. |
+| [**ai-video-composite**](https://github.com/JMRussas/ai-video-composite) | Green-screen removal and compositing toolkit for AI-generated video. Three-stage cleanup pipeline (rembg + alpha cleanup + green defringing). |
 
 ## Career Highlights
 
