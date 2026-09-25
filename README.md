@@ -1,40 +1,39 @@
 # Justin Russas
 
-Software engineer with 25 years building production systems — test orchestration platforms, game engines, AI content pipelines, medical device software, and developer tooling.
+**Principal Engineer · AI systems, developer infrastructure, and regulated software**
 
-I build AI-augmented engineering workflows. The open source projects here are part of a local AI infrastructure I designed and run: task orchestration with multi-model routing, RAG pipelines, MCP tool servers, multi-GPU inference, and code-aware search — all feeding into a daily development workflow where AI tooling is a force multiplier, not a novelty. I architect the systems, make the technical decisions, and use AI the way I'd use any tool in my stack.
+I bring 25+ years of software engineering and technical leadership to hands-on individual contributor work. My background spans medical device software, test orchestration at Dell EMC, and current projects in AI evaluation, task execution, and C# graphics.
 
-## What I'm Building
+I focus on systems whose behavior can be inspected: explicit execution plans, meaningful failure states, and verification that tests the claims we make about the software.
 
-**Orchestration Engine** — AI-powered task orchestration platform. Decomposes requirements into a dependency-aware DAG, routes each task to the cheapest capable model (local Ollama → Haiku → Sonnet), and executes in parallel with TOCTOU-safe budget reservation, tool use, and real-time SSE progress streaming. FastAPI + React, 390+ tests at 85% coverage. This is the system that ties everything below together.
+## Start here
 
-**TraceabilityMedCode** (private — commercial product in development) — Code-native traceability framework for IEC 62304 / ISO 13485 / FDA 21 CFR 820 compliance. Embeds structured annotations directly in source code comments, then validates the full chain from requirements → code → tests → reviews. Risk-class-aware validation (A/B/C), SHA-256 tamper detection, CI pipeline gating, and a VS Code extension with real-time diagnostics. Designed from patterns I've seen repeatedly across 11 years of regulated medical device development. TypeScript monorepo, 218 tests.
+| Project | Engineering question | Evidence |
+|---|---|---|
+| **[Tiered moderation agent](https://github.com/JMRussas/tiered-moderation-agent)** · Python | How should an AI system behave when it cannot classify an input reliably? | [Case study](https://github.com/JMRussas/tiered-moderation-agent/blob/main/docs/case-study.md): uncertainty-preserving fallbacks, regression tests, recorded evaluations, and dataset limits. |
+| **[Orchestration Engine](https://github.com/JMRussas/orchestration-engine)** · Python / React | How do you coordinate dependent AI tasks while making plans, cost, and recovery visible? | [Case study](https://github.com/JMRussas/orchestration-engine/blob/main/docs/case-study.md): dependency graphs, budget reservations, stale-work recovery, and process-local guarantees. |
+| **[YesZ](https://github.com/JMRussas/yesz)** · C# / WebGPU | How do you add 3D rendering to a 2D engine while limiting coupling? | [Case study](https://github.com/JMRussas/yesz/blob/main/docs/case-study.md): draw commands, driver interfaces, shadow passes, and verification. |
 
-**TikTok Live Game Platform** — Real-time interactive game on a custom C# engine with AI-driven procedural content generation (ComfyUI, MuseTalk, LLMs), TikTok Live integration, and a React + FastAPI content dashboard. Dual-GPU inference across RTX 4090 + 3090.
+For **AI and platform roles**, start with moderation and orchestration, then [mcp-rag](https://github.com/JMRussas/mcp-rag), a local code-search pipeline with optional hybrid retrieval and source freshness checks.
 
-**Cozy Creatures** — Multiplayer social hangout where players are cute low-poly creature avatars in themed 3D rooms. React Three Fiber, Socket.io real-time sync, LiveKit spatial voice chat, 30-skin collectible cosmetics system with HSL shaders and GPU particles. 10k+ lines of TypeScript across client, server, and shared packages. 382 tests.
+For **C# and real-time systems roles**, start with YesZ, then [Cozy Creatures](https://github.com/JMRussas/cozy-creatures), a multiplayer browser application with Socket.io and spatial voice. For a quick interactive example, try the [dungeon generator](https://jmrussas.github.io/dungeon-gen/).
 
-**UEFN Dungeon Crawler** — Procedurally generated dungeon crawler in Verse with 11 game systems, Kruskal's maze generation across 3 vertical levels, and data-driven item/ability progression.
+## Professional foundation
 
-## Open Source
+- **Dell EMC — eight years:** built a three-tier orchestration platform managing 90% of automated testing for Midrange Storage, including ML-optimized scheduling. Engineering leadership during VxRail's growth from 30 to 200+ engineers and $30M to $2B+ in product revenue.
+- **Full Spectrum Software — eleven years across two engagements:** production development, technical leadership, and hands-on project management across infusion pumps, ultrasound, EEG, radiation dosimetry, and regulated IoT.
+- **Haemonetics — most recent role, ended June 2026:** R&D Program Manager across TEG, NexLynk, and BloodTrack medical device software products.
 
-| Project | Description |
-|---------|-------------|
-| [**orchestration-engine**](https://github.com/JMRussas/orchestration-engine) | Multi-model task orchestration: dependency DAG, budget-aware model routing, parallel execution, real-time SSE. 390+ tests. |
-| [**ai-engineering-conventions**](https://github.com/JMRussas/ai-engineering-conventions) | 14 process conventions for AI-augmented development — planning rigor, guardrail hooks, checkpoint commits, context budgeting, and more. Extracted from daily practice. |
-| [**mcp-rag**](https://github.com/JMRussas/mcp-rag) | Config-driven RAG pipeline + MCP server. Chunks code with language-aware parsers, embeds locally via Ollama, serves hybrid semantic/keyword search. |
-| [**cozy-creatures**](https://github.com/JMRussas/cozy-creatures) | Multiplayer 3D social hangout: React Three Fiber, Socket.io, LiveKit voice, collectible skin system. 382 tests. |
-| [**dungeon-gen**](https://github.com/JMRussas/dungeon-gen) | Interactive browser-based dungeon generator — Kruskal's algorithm, Union-Find, BFS room assignment. [Live demo.](https://jmrussas.github.io/dungeon-gen/) |
-| [**ollama-mcp**](https://github.com/JMRussas/ollama-mcp) | MCP server exposing local Ollama instances as tools for AI coding assistants. Multi-host routing, generate/chat/embed/list endpoints. |
-| [**ai-video-composite**](https://github.com/JMRussas/ai-video-composite) | Green-screen removal and compositing toolkit for AI-generated video. Three-stage cleanup pipeline (rembg + alpha cleanup + green defringing). |
+The public projects demonstrate current implementation work. My professional experience provides the context for larger-scale delivery and leadership; these prototypes do not claim equivalent deployment scale.
 
-## Career Highlights
+## How I work
 
-- **Dell EMC** (8 years) — Built a three-tier test orchestration platform managing 90% of automated testing for Midrange Storage. ML-optimized scheduling. Scaled VxRail engineering from 30 to 200+ people; product grew from $30M to $2B+.
-- **Full Spectrum Software** (9 years) — Production software and technical lead across regulated medical device products: infusion pumps, ultrasound imaging, EEG monitoring, and radiation dosimetry systems. IEC 62304, ISO 13485.
-- **Full Spectrum Software** (2 years, return engagement) — Technical project management with hands-on development. Regulated IoT on Linux, intelligent catheter systems. FDA regulatory frameworks, IEC 62304.
-- **Haemonetics** (current) — R&D Program Manager across multiple medical device software products: TEG, NexLynk, and BloodTrack.
+I use AI coding tools and document that assistance in commit history. My responsibility is system design, technical decisions, review, and verification. The case studies above show concrete failures and tradeoffs.
 
-## Tech
+[AI Engineering Conventions](https://github.com/JMRussas/ai-engineering-conventions) collects the practical process. [AI Engineering Research](https://github.com/JMRussas/ai-engineering-research) contains the companion practitioner writing, including *Faster Isn't Better*.
 
-`C#` `.NET` `Python` `TypeScript` `React` `React Three Fiber` `FastAPI` `Unity` `UEFN/Verse` `Docker` `Ollama` `SQLite` `Socket.io` `LiveKit` `MCP` `RAG`
+Additional tools: [Ollama MCP](https://github.com/JMRussas/ollama-mcp) · [AI video compositing](https://github.com/JMRussas/ai-video-composite).
+
+**Core stack:** C# / .NET · Python · TypeScript / React · SQLite · Docker · local inference · WebGPU.
+
+[LinkedIn](https://www.linkedin.com/in/justin-russas-7102a9/)
