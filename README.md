@@ -12,11 +12,10 @@ I focus on systems whose behavior can be inspected: explicit execution plans, me
 |---|---|---|
 | **[Tiered moderation agent](https://github.com/JMRussas/tiered-moderation-agent)** · Python | How should an AI system behave when it cannot classify an input reliably? | [Case study](https://github.com/JMRussas/tiered-moderation-agent/blob/main/docs/case-study.md): uncertainty-preserving fallbacks, regression tests, recorded evaluations, and dataset limits. |
 | **[Orchestration Engine](https://github.com/JMRussas/orchestration-engine)** · Python / React | How do you coordinate dependent AI tasks while making plans, cost, and recovery visible? | [Case study](https://github.com/JMRussas/orchestration-engine/blob/main/docs/case-study.md): dependency graphs, budget reservations, stale-work recovery, and process-local guarantees. |
-| **[YesZ](https://github.com/JMRussas/yesz)** · C# / WebGPU | How do you add 3D rendering to a 2D engine while limiting coupling? | [Case study](https://github.com/JMRussas/yesz/blob/main/docs/case-study.md): draw commands, driver interfaces, shadow passes, and verification. |
 
 For **AI and platform roles**, start with moderation and orchestration, then [mcp-rag](https://github.com/JMRussas/mcp-rag), a local code-search pipeline with optional hybrid retrieval and source freshness checks.
 
-For **C# and real-time systems roles**, start with YesZ, then [Cozy Creatures](https://github.com/JMRussas/cozy-creatures), a multiplayer browser application with Socket.io and spatial voice. For a quick interactive example, try the [dungeon generator](https://jmrussas.github.io/dungeon-gen/).
+For **real-time and full-stack roles**, start with [Cozy Creatures](https://github.com/JMRussas/cozy-creatures), a multiplayer browser application with Socket.io and spatial voice. For a quick interactive example, try the [dungeon generator](https://jmrussas.github.io/dungeon-gen/).
 
 ## Professional foundation
 
