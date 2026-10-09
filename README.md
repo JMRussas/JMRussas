@@ -1,8 +1,8 @@
 # Justin Russas
 
-**Principal Engineer · AI systems, developer infrastructure, and regulated software**
+**Principal Engineer / Engineering Manager · AI systems, developer infrastructure, and regulated software**
 
-I bring 25+ years of software engineering and technical leadership to hands-on individual contributor work. My background spans medical device software, test orchestration at Dell EMC, and current projects in AI evaluation, task execution, and C# graphics.
+I bring 25+ years of software engineering and technical leadership, and I am looking for senior individual contributor or engineering management roles. My background spans medical device software, test orchestration at Dell EMC, and current projects in AI evaluation, task execution, and C# graphics.
 
 I focus on systems whose behavior can be inspected: explicit execution plans, meaningful failure states, and verification that tests the claims we make about the software.
 
@@ -24,6 +24,8 @@ For **real-time and full-stack roles**, start with [Cozy Creatures](https://gith
 - **Haemonetics — most recent role, ended June 2026:** R&D Program Manager across TEG, NexLynk, and BloodTrack medical device software products.
 
 The public projects demonstrate current implementation work. My professional experience provides the context for larger-scale delivery and leadership; these prototypes do not claim equivalent deployment scale.
+
+Most of my code is not public. Twenty-five years of it is employer-owned, and my larger independent projects are private, including a TikTok LIVE game platform built on a C# engine with eight pluggable game modules and TraceabilityMedCode, a code-native IEC 62304 / ISO 13485 traceability tool for medical device software. I can walk through private work in interviews.
 
 ## How I work
 
