@@ -12,8 +12,10 @@ I focus on systems whose behavior can be inspected: explicit execution plans, me
 |---|---|---|
 | **[Tiered moderation agent](https://github.com/JMRussas/tiered-moderation-agent)** · Python | How should an AI system behave when it cannot classify an input reliably? | [Case study](https://github.com/JMRussas/tiered-moderation-agent/blob/main/docs/case-study.md): uncertainty-preserving fallbacks, regression tests, recorded evaluations, and dataset limits. |
 | **[Orchestration Engine](https://github.com/JMRussas/orchestration-engine)** · Python / React | How do you coordinate dependent AI tasks while making plans, cost, and recovery visible? | [Case study](https://github.com/JMRussas/orchestration-engine/blob/main/docs/case-study.md): dependency graphs, budget reservations, stale-work recovery, and process-local guarantees. |
+| **[Hekate](https://github.com/JMRussas/Hekate)** · Python / C# / React | How do you keep multi-agent software work reviewable when the models doing it can be wrong? | [README](https://github.com/JMRussas/Hekate#readme): multi-pass plan review, test-first development, cross-model code review, and a dated inventory of what the legacy engine does not guarantee. |
+| **[ChatAgent](https://github.com/JMRussas/ChatAgent)** · TypeScript / Python | How does a chat assistant stay responsive while background agents do bounded, checkpointed work? | [Case study](https://github.com/JMRussas/ChatAgent/blob/main/docs/portfolio-case-study.md) and [results](https://github.com/JMRussas/ChatAgent/blob/main/docs/results.md): lifecycle fault injection and local-model contention measurements. |
 
-For **AI and platform roles**, start with moderation and orchestration, then [mcp-rag](https://github.com/JMRussas/mcp-rag), a local code-search pipeline with optional hybrid retrieval and source freshness checks.
+For **AI and platform roles**, start with moderation and orchestration, then Hekate and ChatAgent, then [mcp-rag](https://github.com/JMRussas/mcp-rag), a local code-search pipeline with optional hybrid retrieval and source freshness checks.
 
 For **real-time and full-stack roles**, start with [Cozy Creatures](https://github.com/JMRussas/cozy-creatures), a multiplayer browser application with Socket.io and spatial voice. For a quick interactive example, try the [dungeon generator](https://jmrussas.github.io/dungeon-gen/).
 
@@ -33,7 +35,7 @@ I use AI coding tools and document that assistance in commit history. My respons
 
 [AI Engineering Conventions](https://github.com/JMRussas/ai-engineering-conventions) collects the practical process. [AI Engineering Research](https://github.com/JMRussas/ai-engineering-research) contains the companion practitioner writing, including *Faster Isn't Better*.
 
-Additional tools: [Ollama MCP](https://github.com/JMRussas/ollama-mcp) · [AI video compositing](https://github.com/JMRussas/ai-video-composite).
+Additional tools: [agent-bridge-mcp](https://github.com/JMRussas/agent-bridge-mcp), a durable mailbox and cross-machine source access for coding agents · [Ollama MCP](https://github.com/JMRussas/ollama-mcp) · [AI video compositing](https://github.com/JMRussas/ai-video-composite).
 
 **Core stack:** C# / .NET · Python · TypeScript / React · SQLite · Docker · local inference · WebGPU.
 
